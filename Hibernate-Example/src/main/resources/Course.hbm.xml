@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "example.entity.Course" table = "Course_Master" lazy="false">
+      
+      <id name = "courseId" type = "string" column = "course_id"></id>
+      <property name = "name" column = "course_name" type = "string"/>
+      <property name = "duration" column = "course_duration" type = "int"/>
+      <property name = "fees" column = "course_fees" type = "int"/>
+      
+   </class>
+</hibernate-mapping>
